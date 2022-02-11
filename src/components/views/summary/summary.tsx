@@ -102,7 +102,7 @@ export class Summary {
                   <div innerHTML={DOMPurify.sanitize(result[0].result.text)} />
                 </div>
               </ia-accordion> : undefined
-              
+              }
               result.length > 1 ? 
               <ia-accordion
               headline={result[1].resultCategory.description}
