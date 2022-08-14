@@ -9,9 +9,6 @@ on:
 jobs:
   install:
     runs-on: ubuntu-latest
-    container:
-      image: cypress/browsers:node16.13.0-chrome95-ff94
-      options: --user 1001
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v1
@@ -22,7 +19,7 @@ jobs:
         env:
           PANDEMIC_TRACKING_URL: 'dummy'
 
-      - run: npm run build
+      - run: npm run prepare-charite && npm run build
 
       - name: Save build folder
         uses: actions/upload-artifact@v3
