@@ -1,28 +1,26 @@
-FROM gitpod/workspace-full
+FROM gitpod/workspace-full-vnc
 
 # From https://github.com/gitpod-io/workspace-images/blob/master/dotnet-lts/Dockerfile
 USER gitpod
 RUN mkdir -p /home/gitpod/dotnet && curl -fsSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin -c 6.0 --install-dir /home/gitpod/dotnet
 ENV DOTNET_ROOT=/home/gitpod/dotnet
 ENV PATH=$PATH:/home/gitpod/dotnet
+ENV CYPRESS_CACHE_FOLDER=/workspace/.cypress-cache
 
-RUN sudo apt-get update
-# Install Cypress-base dependencies
-RUN sudo apt-get install -y \
+# Install Cypress dependencies.
+RUN sudo apt-get update \
+    && sudo DEBIAN_FRONTEND=noninteractive apt-get install -y \
     libgtk2.0-0 \
-    libgtk-3-0
-RUN sudo DEBIAN_FRONTEND=noninteractive apt-get install -yq \
-    libgbm-dev \
-    libnotify-dev
-RUN sudo apt-get install -y \
+    libgtk-3-0 \
+    libnotify-dev \
     libgconf-2-4 \
     libnss3 \
-    libxss1
-RUN sudo apt-get install -y \
+    libxss1 \
     libasound2 \
     libxtst6 \
     xauth \
-    xvfb
+    xvfb \
+    && sudo rm -rf /var/lib/apt/lists/*
 
 # # Fix https://github.com/gitpod-io/workspace-images/issues/515 
 # RUN sudo apt-get update && \
