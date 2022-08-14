@@ -19,7 +19,7 @@ jobs:
         env:
           PANDEMIC_TRACKING_URL: 'dummy'
 
-      - run: npm run prepare-charite && npm run build
+      - run: npm run prepare-charite && npm run build-charite
 
       - name: Save build folder
         uses: actions/upload-artifact@v3
