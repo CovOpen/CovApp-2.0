@@ -73,7 +73,7 @@ jobs:
           record: true
           parallel: true
           group: "UI - Chrome"
-          spec: cypress/tests/ui/*
+          spec: cypress/e2e/*
           config-file: cypress.config.js
         env:
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
@@ -120,7 +120,7 @@ jobs:
           record: true
           parallel: true
           group: "UI - Chrome - Mobile"
-          spec: cypress/tests/ui/*
+          spec: cypress/e2e/*
           config-file: cypress.config.js
         env:
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
@@ -165,7 +165,7 @@ jobs:
           record: true
           parallel: true
           group: "UI - Firefox"
-          spec: cypress/tests/ui/*
+          spec: cypress/e2e/*
           config-file: cypress.config.js
         env:
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
@@ -211,7 +211,7 @@ jobs:
           record: true
           parallel: true
           group: "UI - Firefox - Mobile"
-          spec: cypress/tests/ui/*
+          spec: cypress/e2e/*
           config-file: cypress.config.js
         env:
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
