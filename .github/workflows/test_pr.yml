@@ -66,8 +66,8 @@ jobs:
       - name: "UI Tests - Chrome"
         uses: cypress-io/github-action@v4
         with:
-          start: npx http-server ./build -p 8080
-          wait-on: "http://localhost:8080"
+          start: npx http-server ./build -p 3333
+          wait-on: "http://localhost:3333"
           wait-on-timeout: 120
           browser: chrome
           record: true
@@ -113,8 +113,8 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           config: "viewportWidth=375,viewportHeight=667"
-          start: npx http-server ./build -p 8080
-          wait-on: "http://localhost:8080"
+          start: npx http-server ./build -p 3333
+          wait-on: "http://localhost:3333"
           wait-on-timeout: 120
           browser: chrome
           record: true
@@ -158,8 +158,8 @@ jobs:
       - name: "UI Tests - Firefox"
         uses: cypress-io/github-action@v4
         with:
-          start: npx http-server ./build -p 8080
-          wait-on: "http://localhost:8080"
+          start: npx http-server ./build -p 3333
+          wait-on: "http://localhost:3333"
           wait-on-timeout: 120
           browser: firefox
           record: true
@@ -204,8 +204,8 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           config: "viewportWidth=375,viewportHeight=667"
-          start: npx http-server ./build -p 8080
-          wait-on: "http://localhost:8080"
+          start: npx http-server ./build -p 3333
+          wait-on: "http://localhost:3333"
           wait-on-timeout: 120
           browser: firefox
           record: true
