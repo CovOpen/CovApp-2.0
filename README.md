@@ -1,3 +1,4 @@
+> ⚠️ Attention! This project will be continued here: https://github.com/OSPRS/QuestionnaireApp
 # Publications
 
 CovApp was featured on Nature Medicine.
