@@ -8,7 +8,10 @@ Check it out out here: https://www.nature.com/articles/s41591-022-01797-0
 A web-based app to provide personalized recommendations for COVID-19
 <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41591-022-01797-0/MediaObjects/41591_2022_1797_Fig1_HTML.png?as=webp">
 
+Further publications on CovApp:
 
+Clinical evaluation of a web-based personalized recommendation system with electronic health record interface to optimize healthcare resources during SARS-CoV-2 surges
+https://www.nature.com/articles/s41598-023-48325-9
 
 # Preview
 https://covappcharite.z13.web.core.windows.net/
