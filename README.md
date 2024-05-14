@@ -1,19 +1,15 @@
 > ⚠️ Attention! This project will be continued here: https://github.com/OSPRS/QuestionnaireApp
 # Publications
 
-CovApp was featured on Nature Medicine.
-
-A web-based app to provide personalized recommendations for COVID-19
-
-https://www.nature.com/articles/s41591-022-01797-0
-
 <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41591-022-01797-0/MediaObjects/41591_2022_1797_Fig1_HTML.png?as=webp">
 
-Further publications on CovApp:
+Thieme, A.H., Gertler, M., Mittermaier, M. et al. A web-based app to provide personalized recommendations for COVID-19. Nature Medicine 28, 1105–1106 (2022).
 
-Clinical evaluation of a web-based personalized recommendation system with electronic health record interface to optimize healthcare resources during SARS-CoV-2 surges
+https://doi.org/10.1038/s41591-022-01797-0
 
-https://www.nature.com/articles/s41598-023-48325-9
+Thieme, A.H., Gertler, M., Piening, B.C. et al. Clinical evaluation of a web-based personalized recommendation system with electronic health record interface to optimize healthcare resources during SARS-CoV-2 surges. Sci Rep 13, 22498 (2023).
+
+https://doi.org/10.1038/s41598-023-48325-9
 
 # Preview
 https://covappcharite.z13.web.core.windows.net/
