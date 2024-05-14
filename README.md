@@ -11,6 +11,7 @@ A web-based app to provide personalized recommendations for COVID-19
 Further publications on CovApp:
 
 Clinical evaluation of a web-based personalized recommendation system with electronic health record interface to optimize healthcare resources during SARS-CoV-2 surges
+
 https://www.nature.com/articles/s41598-023-48325-9
 
 # Preview
